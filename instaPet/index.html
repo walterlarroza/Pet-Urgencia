@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstaPet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="principal">
+        <h1 id="bienvenido">Bienvenido a Urgencias de Mascotas</h1>
+        <p>SI TU MASCOTA NO SE SIENTE BIEN, RELLENA EL FORMULARIO Y TE CONTACTAMOS YA ! </p><br>
+        <form action="https://formspree.io/f/xjvljavg" method="POST">
+            <label for="nombreMascota">El nombre de tu mascota:
+                <input id="nombreMascota" name="Nombre" type="text" placeholder="Nombre de tu mascota" required>
+            </label><br><br>
+            <label for="edad">Que edad tiene tu mascota:
+                <input type="number" id="edad" name="edad" placeholder="edad"required>
+            </label><br><br>
+            <label for="email"> Ingrese su correo:
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </label><br><br>
+            <label>Tu contraseña:
+                <input name="contraseña" type="password" placeholder="contraseña" required>
+            </label><br><br>
+            <label> Macho:
+                <input type="radio" name="genero" value="M">
+            </label>
+            <label> Hembra:
+                <input type="radio" name="genero" value="M">
+            </label><br><br>
+            <label for="color">Selecione el color:
+                <input type="color" id="color" name="favcolor" value="#ff0000" placeholder="color" required>
+            </label><br><br>
+            <label for="tipo">Que Mascota tienes:
+            <select name="tipo" id="tipo" required>
+                <option value="per">Perro</option>
+                <option value="gat">Gato</option>
+                <option value="con">Conejo</option>
+                <option value="ham">Hamster</option>
+            </select>
+            </label><br><br>
+            <label> Comentarios
+             <textarea name="comentario" id="comentario" cols="30" rows="8" placeholder="comentarios">
+             </textarea>
+            </label> <br><br>
+            <label for="checkbox">Acepto las bases y condiciones: 
+               <input id="checkbox" name="condiciones" type="checkbox" value="bases_condiciones">
+            </label><br><br>
+            <input type="submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
